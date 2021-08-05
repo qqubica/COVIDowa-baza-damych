@@ -1,0 +1,175 @@
+INSERT INTO wojewodztwo
+VALUES (1, 'MAZOWIECKIE');
+
+INSERT INTO wojewodztwo
+VALUES (2, 'POMORSKIE');
+
+INSERT INTO wojewodztwo
+VALUES (3, 'PODLASKIE');
+
+INSERT INTO wojewodztwo
+VALUES (4, 'LODZKIE');
+
+INSERT INTO wojewodztwo
+VALUES (5, 'MALOPOLSKIE');
+
+INSERT INTO miasto
+VALUES (1, 1, 'WARSZAWA');
+
+INSERT INTO miasto
+VALUES (2, 3, 'BIALYSTOK');
+
+INSERT INTO miasto
+VALUES (3, 2, 'GDYNIA');
+
+INSERT INTO miasto
+VALUES (4, 5, 'KRAKOW');
+
+INSERT INTO miasto
+VALUES (5, 4, 'LODZ');
+
+INSERT INTO adres
+VALUES( 1, 1, 'Koszykowa', '86', NULL);
+
+INSERT INTO adres
+VALUES (2, 1, 'STEPINSKA', '19/25', NULL);
+
+INSERT INTO adres
+VALUES (3, 2, 'ZURAWIA', '14', NULL);
+
+INSERT INTO adres
+VALUES (4, 3, 'JANA Z KOLNA', '28', '10');
+
+INSERT INTO adres
+VALUES (5, 3, 'POMORSKA', '48-62', '12');
+
+INSERT INTO adres
+VALUES (6, 5, 'NAWROT', '20', '27');
+
+INSERT INTO adres
+VALUES (7, 5, 'LIPOWA', '31', '19');
+
+INSERT INTO adres
+VALUES (8, 1, 'ROZANA', '36', '123');
+
+INSERT INTO adres
+VALUES (9, 4, 'BASZTOWA', '26-623', NULL);
+
+INSERT INTO daneOsobowe
+VALUES (1, 'MAREK', 'CFANIAK', 1, '1999-05-23', 1);
+
+INSERT INTO daneOsobowe
+VALUES (2, 'AGATA', 'DUDA', 2, '1965-03-12', 0);
+
+INSERT INTO daneOsobowe
+VALUES (3, 'ZBIGNIEW', 'STONOGA', 3, '1950-09-29', 1);
+
+INSERT INTO daneOsobowe
+VALUES (4, 'ZBIGNIEW', 'ZIOBRO', 4, '1944-04-01', 1);
+
+INSERT INTO daneOsobowe
+VALUES (5, 'Kinga', 'DUDA', 5, '1995-12-25', 0);
+
+INSERT INTO daneOsobowe
+VALUES (6, 'OLGA', 'TOKARCZUK', 6, '1962-07-31', 0);
+
+INSERT INTO daneOsobowe
+VALUES (7, 'MATA', 'MATCZAK', 7, '1999-09-11', 1);
+
+INSERT INTO daneOsobowe
+VALUES (8, 'TATA', 'MATY', 7, '1967-03-04', 1);
+
+INSERT INTO daneOsobowe
+VALUES (9, 'ANTONI', 'EXPERT', 2, '1940-03-03', 1);
+
+INSERT INTO specjalizacja
+VALUES (1, 'KARDIOLOGIA');
+
+INSERT INTO specjalizacja
+VALUES (2, 'CHIRURGIA');
+
+INSERT INTO specjalizacja
+VALUES (3, 'PULMUNOLOGIA');
+
+INSERT INTO SzpitalRodzaj
+VALUES (1, 'WOJSKOWY');
+
+INSERT INTO SzpitalRodzaj
+VALUES (2, 'TYMCZASOWY');
+
+INSERT INTO SzpitalRodzaj
+VALUES (3, 'WOJEWODZKI');
+
+INSERT INTO szpital
+VALUES (1, 'SZPITAL IM. MATKI BOSKIEJ CZESTOCHOWSKIEJ', 3, 100, 3, 1);
+
+INSERT INTO szpital
+VALUES (2, 'SZPITAL IM. TADEUSZA JULIUSZKO', 9, 55, 2, 3);
+
+INSERT INTO szpital
+VALUES (3, 'SZPITAL NARODOWY NA STADIONIE NARODOWYM', 2, 25, 3, 2);
+
+INSERT INTO lekarz
+VALUES (4, 1, 1);
+
+INSERT INTO lekarz
+VALUES (1, 2, 2);
+
+INSERT INTO lekarz
+VALUES (6, 3, 3);
+
+INSERT INTO rodzajTestu
+VALUES (1, 'Test genetyczny RT-PCR');
+
+INSERT INTO rodzajTestu
+VALUES (2, 'Test antygenowy');
+
+INSERT INTO rodzajTestu
+VALUES (3, 'Test serologiczny wykrywaj¹cy przeciwcia³a IgG');
+
+INSERT INTO testNaCovid
+VALUES (1, 1, 0, '2021-01-05', 1);
+
+INSERT INTO testNaCovid
+VALUES (2, 5, 1, '2020-12-20', 2);
+
+INSERT INTO testNaCovid
+VALUES (3, 5, 0, '2021-01-12', 1);
+
+INSERT INTO testNaCovid
+VALUES (4, 3, 0, '2020-09-19', 3);
+
+INSERT INTO testNaCovid
+VALUES (5, 2, 1, '2021-07-06', 1);
+
+INSERT INTO testNaCovid
+VALUES (6, 7, 1, '2021-04-25', 1);
+
+INSERT INTO testNaCovid
+VALUES (7, 8, 1, '2021-04-25', 1);
+
+INSERT INTO testNaCovid
+VALUES (8, 9, 1, '2021-02-15', 1);
+
+INSERT INTO testNaCovid
+VALUES (9, 4, 1, '2020-12-15', 1);
+
+INSERT INTO zarazony
+VALUES (1, 5, 1);
+
+INSERT INTO zarazony
+VALUES (2, 6, 2);
+
+INSERT INTO zarazony
+VALUES (3, 7, 3);
+
+INSERT INTO zmarly
+VALUES (1, '2021-03-03', 9);
+
+INSERT INTO zmarly
+VALUES (2, '2021-05-07', 8);
+
+INSERT INTO zmarly
+VALUES (3, '2020-12-24', 4);
+
+COMMIT;
